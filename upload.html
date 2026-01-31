@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Article - News Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for upload icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Upload Article</h1>
+            <p class="subtitle">Upload your news article to summarize</p>
+
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label class="upload-area" for="file-upload">
+                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                        <span>Click to Upload File</span>
+                        <input type="file" id="file-upload" class="hidden" required>
+                    </label>
+                    <p id="file-name" class="subtitle" style="margin-bottom: 0;">No file chosen</p>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
+            <div id="summary-output">
+                <h3>Summary</h3>
+                <p>This is where the summarized text of your article will appear. It utilizes the selected language to
+                    provide a concise overview of the news content.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
